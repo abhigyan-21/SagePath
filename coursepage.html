@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>SagePath Course Page</title>
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="homepage.html#">Home</a>
+            <a href="coursepage.html#">Courses</a>
+            <a href="communitypage.html">Community</a>
+            <a href="aboutpage.html">About</a>
+            <a href="landingpage.html">Story</a>
+        </div>
+
+        <div class="nav-right">
+            <i class="fas fa-moon" id="nav-icons"></i>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+
+    <!-- progress bar-->
+    <div id="progress-container">
+
+        <button class="progress-control" aria-label="Previous">
+            &#8249;
+        </button>
+
+        <div id="progress-bar">
+
+            <div class="progress-item completed">
+                progress
+            </div>
+            <div class="progress-item completed">
+                progress
+            </div>
+            <div class="progress-item completed">
+                progress
+            </div>
+            <div class="progress-item current">
+                progress
+            </div>
+            <div class="progress-item">
+                progress
+            </div>
+
+        </div>
+        <button class="progress-control" aria-label="Next">
+            &#8250;
+        </button>
+
+    </div>
+
+    <!-- Course Content -->
+    <div class="content-grid">
+
+        <!-- Left column (video + doubts panel) -->
+        <div class="course-container">
+
+            <div id="course-video-panel">
+                <img id="video-gif" src="images/hello-ji.gif" alt="Demo Video" >
+            </div>
+
+            <div id="Doubts-panel">
+                <div id="mascot-img-container">
+                    <img id="mascot-img" src="images/Pixel Wizard with Flaming Staff.png" alt="mascot">
+                </div>
+                <div class="doubts-content">
+                    <h2>Doubts Panel</h2>
+                    <p>Have questions? Ask here!</p>
+                    <form class="doubts-form" action="#" onsubmit="return false;">
+                        <input type="text" placeholder="Type your question...">
+                        <button type="submit">Ask</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column (sidebar) -->
+        <aside class="course-sidebar">
+
+            <div class="stats-card">
+                <div id="luro-img-container">
+                    <img id="luro-img" src="images/Pixel Art Otter Creature.png" alt="luro image">
+                </div>
+                <div class="stats-info">
+                    <h3>Otter</h3>
+                    <p>Level 5</p>
+                    <p>XP: 1500</p>
+                </div>
+            </div>
+
+            <div class="topics-list">
+                <i class="fas fa-chevron-up"></i>
+                <button class="topic-item">topic</button>
+                <button class="topic-item">topic</button>
+                <button class="topic-item">topic</button>
+                <button class="topic-item highlight">mini game</button>
+                <button class="topic-item">topic</button>
+                <button class="topic-item">topic</button>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
